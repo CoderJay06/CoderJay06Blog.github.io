@@ -17,7 +17,7 @@ HTML which stands for (Hypertext Markup Language) basically makes up the structu
 <html>
   <head>
 	
-	<title></title>
+  <title></title>
 		
  </head>
   <body>
@@ -59,6 +59,8 @@ In summary, HTML is needed to develop for the web as it is a necessary tool to b
 
 *Sources for blog:*
 https://learn.co/tracks/full-stack-web-development-v8/module-4-introduction-to-html-and-css/section-2-html-basics/html-introduction
+
 https://www.w3schools.com/html/html_basic.asp
+
 https://intellipaat.com/mediaFiles/2015/02/html-fundamentals.jpg
 
