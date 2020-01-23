@@ -1,0 +1,48 @@
+---
+layout: post
+title:      "Ruby Gems "
+date:       2020-01-23 04:42:50 +0000
+permalink:  ruby_gems
+---
+
+
+[](https://en.wikipedia.org/wiki/RubyGems)
+**What is a Ruby Gem?**
+
+A Ruby Gem is basically a library or package for ruby which contains code that can extend your application. The interface is a command line tool called a gem. 
+
+**History of Ruby Gems**
+
+Ruby Gem development started in November 2003. In 2010 the default public repository for Ruby Gems was moved to rubygems.org and development for Ruby Gems was moved to Github. It wasn't part of Ruby distribution until Ruby 1.9.
+
+**Structure of Gem**
+
+Each Gem consists of code, documentation and gem specification(.gemspec). The standard structure for a Ruby Gem is as follows: 
+```
+gem_name/
+├── bin/
+│   └── gem_name
+├── lib/
+│   └── gem_name.rb
+├── test/
+│   └── test_gem_name.rb
+├── README
+├── Rakefile
+└── gem_name.gemspec
+```
+
+**Gem Commands**
+
+A few basic Gem commands:
+```
+# Install a named gem
+gem install gem_name
+
+# Uninstall gem
+gem uninstall gem_name 
+
+# Listing all installed gems
+gem list 
+```
+
+*Blog sources: * https://en.wikipedia.org/wiki/RubyGems , https://www.youtube.com/watch?v=wYc9HYUAoCQ , https://rubygems.org/
