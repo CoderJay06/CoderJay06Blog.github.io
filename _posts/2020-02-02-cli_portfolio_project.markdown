@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "CLI Portfolio Project "
-date:       2020-02-02 21:41:07 +0000
+date:       2020-02-02 16:41:07 -0500
 permalink:  cli_portfolio_project
 ---
 
@@ -31,7 +31,7 @@ def self.scrape_scheduled_fights
 	
 ```
 
-With some help I eventually got the above method working and displaying the data I needed it to. This method  uses css selectors to open the part of the webpage I need and get the number of upcoming fights to loop through, assigning both to variables. It's then making new Fight class objects and assigning all details needed as the object attributes before saving it all to the Fight class. The next challenge is having it all get displayed to the user in a clean and structured look. Using the CLI class to call on the Scraper method and iterate over all objects saved to Fight class I eventually had it displaying everything how I wanted. The only problem was making my CLI class mored DRY(Don't Repeat Yourself) but metaprogramming proved to be very useful here by using `.send()` I was able to make my application more flexible and dry. In the end I feel like I learned a lot and had an overall good experience with this project.
+With some help I eventually got the above method working and displaying the data I needed it to. This method  uses css selectors to open the part of the webpage I need and get the number of upcoming fights to loop through, assigning both to variables. It's then making new Fight class objects and assigning all details needed as the object attributes before saving it all to the Fight class. The next challenge is having it all get displayed to the user in a clean and structured look. Using the CLI class to call on the Scraper method and iterate over all objects saved to Fight class I eventually had it displaying everything how I wanted. The only problem was making my CLI class more DRY(Don't Repeat Yourself) but metaprogramming proved to be very useful here. By using the `.send()` method I was able to make my application more flexible and dry. In the end I feel like I learned a lot and had an overall good experience with this project.
 
 
 
