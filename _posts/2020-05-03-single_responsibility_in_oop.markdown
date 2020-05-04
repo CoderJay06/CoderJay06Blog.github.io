@@ -1,12 +1,12 @@
 ---
 layout: post
 title:      "Single Responsibility in OOP"
-date:       2020-05-04 01:30:48 +0000
+date:       2020-05-03 21:30:49 -0400
 permalink:  single_responsibility_in_oop
 ---
 
 
-Single responsibility is an import concept in object-oriented programming. It is the first of the [SOLID](https://en.wikipedia.org/wiki/SOLID)(Single responsibility, Open-closed, Liskov substitution, Interface segregation,  Dependency inversion) principles which were first introduced by [Robert C. Martin](https://en.wikipedia.org/wiki/Robert_C._Martin) and named by Michael Feathers. It was created to make software design understandable, flexible, and maintainable. Single responsibility's  definition is defined as follows,* 'A class should have only a single responsibility, changes to just one part of the software's specification should be able to affect the specification of the class'*. 
+Single responsibility is an import concept in object-oriented programming. It is the first of the [SOLID](https://en.wikipedia.org/wiki/SOLID)(Single responsibility, Open-closed, Liskov substitution, Interface segregation,  Dependency inversion) principles which were first introduced by [Robert C. Martin](https://en.wikipedia.org/wiki/Robert_C._Martin) and named by Michael Feathers. It was created to make software design understandable, flexible, and maintainable. Single responsibility's  definition is defined as follows, *'A class should have only a single responsibility, changes to just one part of the software's specification should be able to affect the specification of the class'. *
 
 **Designing Classes with a Single Responsibility**
 
