@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Rails Portfolio Project "
-date:       2020-09-18 00:35:43 +0000
+date:       2020-09-17 20:35:44 -0400
 permalink:  rails_portfolio_project
 ---
 
@@ -75,3 +75,5 @@ Some things I've learned from this project are:
 - Make sure to put enough time into planning before coding, I feel like I could've done a bit better with this and would've gone through the requirements faster if I did better planning. 
 - Utilizing Flatiron's resources such as the videos can really help when you are stuck.
 - Last but not least, make sure to attend project meetups (even if you don't think you need help with anything it can be very helpful to see what other students are struggling with and it's good for communicating with other students who are in the same part of the curriculum as you're).
+
+*Check out my project, [Dev Library](https://github.com/CoderJay06/dev_library).*
