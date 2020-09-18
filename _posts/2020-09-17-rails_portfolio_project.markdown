@@ -15,7 +15,7 @@ After lots of challenges and bugs, I'm coming towards the end of my rails projec
 For the planning part of my project, I started with a word doc to jot down all the requirements and what my models would be and their associations. I then filled out the project planning resources and followed the steps that the curriculum suggests. I gave wireframing a shot to end with, drawing out my templates in a notebook and using this really cool site for wireframing [Wireframe.cc](https://wireframe.cc/) which I found simpler to use compared to Figma.
 
 **Coding**
-<iframe src="https://giphy.com/embed/3oKIPnAiaMCws8nOsE" width="320" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/cat-kitten-computer-3oKIPnAiaMCws8nOsE"></a></p>
+<iframe src="https://giphy.com/embed/3oKIPnAiaMCws8nOsE" width="280" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/cat-kitten-computer-3oKIPnAiaMCws8nOsE"></a></p>
 After setting up my project repository and jotting down my plans in a .md file it was time to start coding. For my first steps I followed the usual flow of generating my models and controllers then migrating the database. Then came the part of building out my model associations. The associations I came up with were the following:
 ```
 User:
@@ -54,7 +54,7 @@ Some of the routes this generated are `books/:book_id/reviews` for a book's revi
 
 
 **Refactoring**
-<iframe src="https://giphy.com/embed/Lntt6Vee77UeiLf4aD" width="320" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/Veeam-code-refactoring-veeam-Lntt6Vee77UeiLf4aD"></a></p>
+<iframe src="https://giphy.com/embed/Lntt6Vee77UeiLf4aD" width="300" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/Veeam-code-refactoring-veeam-Lntt6Vee77UeiLf4aD"></a></p>
 After finishing the basic requirements from the project specification the last but not least requirements were:
  .The application is pretty DRY
  .Limited logic in controllers
