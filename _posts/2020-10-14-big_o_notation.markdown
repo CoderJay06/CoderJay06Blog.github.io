@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Big O Notation"
-date:       2020-10-15 01:27:27 +0000
+date:       2020-10-14 21:27:28 -0400
 permalink:  big_o_notation
 ---
 
@@ -14,8 +14,7 @@ Big O notation is a mathmatical tool commonly used in Computer Science for measu
 ## Time Complexity
 Instead of measuring the actual time of an algorithm, we use time complexity which is the method of determining how many times an algorithm's statements will run. 
 
-##### Most common time complexities<br>
-
+#### Most common time complexities<br>
 *The n in O() represnts the input size.*<br>
 
 **O(1)** - Constant runtime. This means the code executes instantly. No matter what the input size it executes in the same exact time. For example if a group of programmers all decide to say hello world at the same time it would cost the same amount of time as only one programmer saying hello world. The following code executes in constant time:<br>
@@ -73,12 +72,12 @@ public static int binarySearch(int [] phoneBook, int number) {
 <br>
 <br>
 
-##### Drop the Constants and Non-Dominant Terms<br>
+#### Drop the Constants and Non-Dominant Terms<br>
 When determining a Big O notation runtime, the constants should be dropped. For example if you have a specific runtime expression *O(n + 1 + 1 + 1)* this would be boiled down to *O(n)* because Big O only describes the worst case and including the constants wouldn't make a big enough difference. Also non-dominant terms should be dropped from the expression, for example *O(n^2 + n)* would become *O(n^2)*
 ## Space Complexity
-In Big O space complexity describes the total amount of memory space used by an algorithm determined by its input size n. This is also expressed the same as time complexity for example an array of size n elements would be expressed as *O(n) *space.
+In Big O space complexity describes the total amount of memory space used by an algorithm determined by its input size n. This is also expressed the same as time complexity for example an array of size n elements would be expressed as *O(n)* space.
 
-##### Analyzing Space Complexity<br>
+#### Analyzing Space Complexity<br>
 
 ```
 public double calculateAverage(int[] array) {
@@ -105,7 +104,7 @@ The space for this example code would be mesured by 4n + 4 + 8 + 4. Since n is t
 <br>
 <br>
 <br>
-###### Additional Big O Resources
+#### Additional Big O Resources
 * [Big O notation](https://en.wikipedia.org/wiki/Big_O_notation)
 * [What is Big O Notation Explained: Space and Time Complexity](https://www.freecodecamp.org/news/big-o-notation-why-it-matters-and-why-it-doesnt-1674cfa8a23c/)
 * [Understanding Time Complexity with Simple Examples](https://www.geeksforgeeks.org/understanding-time-complexity-simple-examples/)
