@@ -84,14 +84,15 @@ In Big O space complexity describes the total amount of memory space used by an 
 
 ```
 public double calculateAverage(int[] array) {
-     int sum = 0;
-	 double average;
-	 for (int i = 0; i < array.length; i++) {
-	    sum += array[i];
-	 }
-	 average = sum / array.length;
+
+  int sum = 0;
+  double average;
+  for (int i = 0; i < array.length; i++) {
+	 sum += array[i];
+  }
+  average = sum / array.length;
 	 
-	 return average;
+  return average;
 }
 ```
 
