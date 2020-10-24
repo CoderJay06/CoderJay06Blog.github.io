@@ -44,7 +44,7 @@ public class Pay
 	  {
 		  WriteLine($"You payed {convertedPay} dollars");
 	  }
-      else
+	  else
 	  {
 		  WriteLine("Invalid format entered, use a $ and a decimal number");
       }
