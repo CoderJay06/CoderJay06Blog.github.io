@@ -19,41 +19,41 @@ public class Pay
 {
  static void Main()
  {
-	 string strPay;
-	 double numPay;
+	string strPay;
+	double numPay;
 		
-	 Write("Enter payment >> ");
-	 strPay = ReadLine();
+	Write("Enter payment >> ");
+	strPay = ReadLine();
 		
-	 // Determine input type and pass it to overloaded method
-	 if (double.TryParse(strPay, out numPay) )
-	 {
-		 AcceptPayment(numPay);
-	 }
-	 else
-	 {
-		 AcceptPayment(strPay);
-	 }
-  }
+	// Determine input type and pass it to overloaded method
+	if (double.TryParse(strPay, out numPay) )
+	{
+	  AcceptPayment(numPay);
+	}
+	else
+	{
+	  AcceptPayment(strPay);
+	}
+ }
 	
-    public static void AcceptPayment(string pay)
-    {
+   public static void AcceptPayment(string pay)
+   {
 	  double convertedPay;
      // Check if user entered the correct format and display output
 	  if (pay.Substring(0, 1) == "$" && double.TryParse(pay.Substring(1), out convertedPay) )
 	  {
-		  WriteLine($"You payed {convertedPay} dollars");
-	   }
+		 WriteLine($"You payed {convertedPay} dollars");
+	  }
 	  else
 	  {
-		  WriteLine("Invalid format entered, use a $ and a decimal number");
+		 WriteLine("Invalid format entered, use a $ and a decimal number");
 	  }
 	}
 
-    public static void AcceptPayment(double pay)
-    {
-        WriteLine($"You payed ${pay} dollars");
-    }
+   public static void AcceptPayment(double pay)
+   {
+     WriteLine($"You payed ${pay} dollars");
+   }
 }
 ```
 <br>
@@ -122,7 +122,8 @@ public class AmbiguousExample
 
 The first two method calls would work but when we attempt to execute the third method call the compiler will not be able to determine a best match for it by both arguments being integers. This is because although the integer could be converted to a double it will not know which method to choose as there is not an exact match for the method call. After running this program the following error message is generated:
 ```
-main.cs(9,9): error CS0121:  The call is ambiguous between the following methods or properties: `AmbiguousExample.AmbiguousMethod(int, double)' and `AmbiguousExample.AmbiguousMethod(double, int)'
+ main.cs(9,9): error CS0121:  The call is ambiguous between the following methods or properties: 
+ AmbiguousExample.AmbiguousMethod(int, double)' and AmbiguousExample.AmbiguousMethod(double, int)'
 ```
 This is considered an ambigous situation created by the programmer as the overloaded method would not be determined to be ambigous by itself, only once the programmer has made it that way. 
 ## Conclusion
