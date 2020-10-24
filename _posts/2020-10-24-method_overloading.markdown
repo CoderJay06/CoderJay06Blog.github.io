@@ -19,13 +19,13 @@ public class Pay
 {
   static void Main()
   {
-	 string strPay;
-	 double numPay;
+     string strPay;
+     double numPay;
 		
-	 Write("Enter payment >> ");
+     Write("Enter payment >> ");
 	 strPay = ReadLine();
 		
-	 // Determine input type and pass it to overloaded method
+      // Determine input type and pass it to overloaded method
 	 if (double.TryParse(strPay, out numPay) )
 	 {
 		 AcceptPayment(numPay);
@@ -34,7 +34,7 @@ public class Pay
 	 {
 		 AcceptPayment(strPay);
 	 }
-   }
+  }
 	
     public static void AcceptPayment(string pay)
     {
