@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Method Overloading"
-date:       2020-10-24 11:11:17 +0000
+date:       2020-10-24 07:11:18 -0400
 permalink:  method_overloading
 ---
 
@@ -17,37 +17,37 @@ using static System.Console;
 using System;
 public class Pay
 {
-  static void Main()
-	{
-	    string strPay;
-		double numPay;
+ static void Main()
+ {
+	 string strPay;
+	 double numPay;
 		
-		Write("Enter payment >> ");
-		strPay = ReadLine();
+	 Write("Enter payment >> ");
+	 strPay = ReadLine();
 		
-		// Determine input type and pass it to overloaded method
-		if (double.TryParse(strPay, out numPay) )
-		{
-		  AcceptPayment(numPay);
-		}
-		else
-		{
-		  AcceptPayment(strPay);
-		}
-	}
+	 // Determine input type and pass it to overloaded method
+	 if (double.TryParse(strPay, out numPay) )
+	 {
+		 AcceptPayment(numPay);
+	 }
+	 else
+	 {
+		 AcceptPayment(strPay);
+	 }
+  }
 	
-	public static void AcceptPayment(string pay)
-	{
-		double convertedPay;
-        // Check if user entered the correct format and display output
-		if (pay.Substring(0, 1) == "$" && double.TryParse(pay.Substring(1), out convertedPay) )
-		{
+    public static void AcceptPayment(string pay)
+    {
+	  double convertedPay;
+     // Check if user entered the correct format and display output
+	  if (pay.Substring(0, 1) == "$" && double.TryParse(pay.Substring(1), out convertedPay) )
+	  {
 		  WriteLine($"You payed {convertedPay} dollars");
-		}
-		else
-		{
+	   }
+	  else
+	  {
 		  WriteLine("Invalid format entered, use a $ and a decimal number");
-		}
+	  }
 	}
 
     public static void AcceptPayment(double pay)
@@ -71,14 +71,14 @@ As you can see, either way the user enters their input the correct overloaded me
 When you have an overloaded method call that could execute multiple versions, the method with the best match will be executed. In C# this is known as **overload resolution**. Say you have the following methods:
 ```
 public static void OverloadedMethod(double number)
-    {
-        WriteLine("You entered a double: {0}", number);
-    }
+{
+   WriteLine("You entered a double: {0}", number);
+}
 
-    public static void OverloadedMethod(int number)
-    {
-        WriteLine("You entered an int: {0}", number);
-    }
+public static void OverloadedMethod(int number)
+{
+   WriteLine("You entered an int: {0}", number);
+}
 ```
 If you call the method with an int argument both methods are able to accept it because an int would be automatically converted to a double type, but the method with the int parameter would be used over the other. In C# this is called betterness rules (rules that determmine which version of the method to call).
 ```
@@ -102,21 +102,21 @@ using System;
 public class AmbiguousExample
 {
   static void Main()
-	{
-        AmbiguousMethod(2, 2.5); // Matches first method
-        AmbiguousMethod(4.5, 2); // Matches second method
-        AmbiguousMethod(2, 2); // Ambiguous error message
-	}
+  {
+     AmbiguousMethod(2, 2.5); // Matches first method
+     AmbiguousMethod(4.5, 2); // Matches second method
+     AmbiguousMethod(2, 2); // Ambiguous error message
+  }
 
-    public static void AmbiguousMethod(int num1, double num2) 
-    {
-        WriteLine($"My parameters are int: {num1} and double: {num2}");
-    }
-
-    public static void AmbiguousMethod(double num1, int num2)
-    {
-        WriteLine($"My parameters are double: {num1} and int: {num2}");
-    }
+  public static void AmbiguousMethod(int num1, double num2) 
+  {
+     WriteLine($"My parameters are int: {num1} and double: {num2}");
+  }
+	 
+  public static void AmbiguousMethod(double num1, int num2)
+  {
+     WriteLine($"My parameters are double: {num1} and int: {num2}");
+  }
 }
 ```
 
