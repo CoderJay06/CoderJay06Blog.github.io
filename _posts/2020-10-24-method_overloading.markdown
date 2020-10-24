@@ -40,16 +40,16 @@ public class Pay
    {
 	  double convertedPay;
       // Check if user entered the correct format and display output
-	 if (pay.Substring(0, 1) == "$" && double.TryParse(pay.Substring(1), out convertedPay) )
-	 {
-		WriteLine($"You payed {convertedPay} dollars");
-	 }
-     else
-	 {
-		WriteLine("Invalid format entered, use a $ and a decimal number");
-	 }
-	}
-
+      if (pay.Substring(0, 1) == "$" && double.TryParse(pay.Substring(1), out convertedPay) )
+	  {
+		  WriteLine($"You payed {convertedPay} dollars");
+	  }
+      else
+	  {
+		  WriteLine("Invalid format entered, use a $ and a decimal number");
+      }
+   }
+	 
     public static void AcceptPayment(double pay)
     {
        WriteLine($"You payed ${pay} dollars");
