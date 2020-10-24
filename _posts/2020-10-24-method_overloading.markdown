@@ -17,43 +17,43 @@ using static System.Console;
 using System;
 public class Pay
 {
- static void Main()
- {
-	string strPay;
-	double numPay;
+  static void Main()
+  {
+	 string strPay;
+	 double numPay;
 		
-	Write("Enter payment >> ");
-	strPay = ReadLine();
+	 Write("Enter payment >> ");
+	 strPay = ReadLine();
 		
-	// Determine input type and pass it to overloaded method
-	if (double.TryParse(strPay, out numPay) )
-	{
-	  AcceptPayment(numPay);
-	}
-	else
-	{
-	  AcceptPayment(strPay);
-	}
- }
+	 // Determine input type and pass it to overloaded method
+	 if (double.TryParse(strPay, out numPay) )
+	 {
+		 AcceptPayment(numPay);
+	 }
+	 else
+	 {
+		 AcceptPayment(strPay);
+	 }
+   }
 	
-   public static void AcceptPayment(string pay)
-   {
+    public static void AcceptPayment(string pay)
+    {
 	  double convertedPay;
-     // Check if user entered the correct format and display output
+      // Check if user entered the correct format and display output
 	  if (pay.Substring(0, 1) == "$" && double.TryParse(pay.Substring(1), out convertedPay) )
 	  {
-		 WriteLine($"You payed {convertedPay} dollars");
-	  }
+		  WriteLine($"You payed {convertedPay} dollars");
+	   }
 	  else
 	  {
-		 WriteLine("Invalid format entered, use a $ and a decimal number");
+		  WriteLine("Invalid format entered, use a $ and a decimal number");
 	  }
 	}
 
-   public static void AcceptPayment(double pay)
-   {
-     WriteLine($"You payed ${pay} dollars");
-   }
+    public static void AcceptPayment(double pay)
+    {
+        WriteLine($"You payed ${pay} dollars");
+    }
 }
 ```
 <br>
