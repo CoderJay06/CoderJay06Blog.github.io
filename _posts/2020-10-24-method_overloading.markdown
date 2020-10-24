@@ -23,17 +23,17 @@ public class Pay
      double numPay;
 		
      Write("Enter payment >> ");
-	 strPay = ReadLine();
+     strPay = ReadLine();
 		
      // Determine input type and pass it to overloaded method
-	 if (double.TryParse(strPay, out numPay) )
-	 {
-		 AcceptPayment(numPay);
-	 }
-	 else
-	 {
-		 AcceptPayment(strPay);
-	 }
+     if (double.TryParse(strPay, out numPay) )
+     {
+	     AcceptPayment(numPay);
+     }
+     else
+     {
+	     AcceptPayment(strPay);
+     }
   }
 	
     public static void AcceptPayment(string pay)
