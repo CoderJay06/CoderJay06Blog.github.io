@@ -36,8 +36,8 @@ public class Pay
      }
   }
 	
- public static void AcceptPayment(string pay)
- {
+  public static void AcceptPayment(string pay)
+  {
 	double convertedPay;
 			
 	// Check if user entered the correct format and display output
@@ -48,8 +48,8 @@ public class Pay
 	else
 	{
 		WriteLine("Invalid format entered, use a $ and a decimal number");
-	}
- }
+	 }
+  }
 	 
     public static void AcceptPayment(double pay)
     {
