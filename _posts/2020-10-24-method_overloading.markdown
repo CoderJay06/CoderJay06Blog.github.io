@@ -25,7 +25,7 @@ public class Pay
      Write("Enter payment >> ");
 	 strPay = ReadLine();
 		
-      // Determine input type and pass it to overloaded method
+     // Determine input type and pass it to overloaded method
 	 if (double.TryParse(strPay, out numPay) )
 	 {
 		 AcceptPayment(numPay);
@@ -43,16 +43,16 @@ public class Pay
 	  if (pay.Substring(0, 1) == "$" && double.TryParse(pay.Substring(1), out convertedPay) )
 	  {
 		  WriteLine($"You payed {convertedPay} dollars");
-	   }
-	  else
+	  }
+      else
 	  {
 		  WriteLine("Invalid format entered, use a $ and a decimal number");
 	  }
-	}
+	 }
 
     public static void AcceptPayment(double pay)
     {
-        WriteLine($"You payed ${pay} dollars");
+       WriteLine($"You payed ${pay} dollars");
     }
 }
 ```
