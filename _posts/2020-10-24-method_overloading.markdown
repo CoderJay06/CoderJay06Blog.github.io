@@ -67,7 +67,7 @@ Enter payment >> $Hello World
 Invalid format entered, use a $ and a decimal number
 ```
 As you can see, either way the user enters their input the correct overloaded method will be called and their result will be output. 
-### Overload Resolution
+## Overload Resolution
 When you have an overloaded method call that could execute multiple versions, the method with the best match will be executed. In C# this is known as **overload resolution**. Say you have the following methods:
 ```
 public static void OverloadedMethod(double number)
@@ -94,7 +94,7 @@ OverloadedMethod(12.55);
 // The method with a double type parameter is executed
 You entered a double: 12.55
 ```
-### Ambiguous Methods
+## Ambiguous Methods
 When you use overloaded methods there's a chance you unintentionally create **ambiguous methods** which is when the compiler cannot figure out which method to execute and an error message is returned. For example assume the program below with two methods:
 ```
 using static System.Console;
@@ -125,7 +125,7 @@ The first two method calls would work but when we attempt to execute the third m
 main.cs(9,9): error CS0121:  The call is ambiguous between the following methods or properties: `AmbiguousExample.AmbiguousMethod(int, double)' and `AmbiguousExample.AmbiguousMethod(double, int)'
 ```
 This is considered an ambigous situation created by the programmer as the overloaded method would not be determined to be ambigous by itself, only once the programmer has made it that way. 
-### Conclusion
+## Conclusion
 To implement method overloading the methods first need to have the same name/identifier and then either of the following:
 * different parameter data types
 * different number of parameters
@@ -133,9 +133,9 @@ To implement method overloading the methods first need to have the same name/ide
 
 When used correctly method overloading can improve your codes readablity and maintainability but it is not always necessary and can actually cause more harm than good when used incorrectly. Therefore in most situations it should only be used if needed.
 
-#### Additional Method Overloading resouces:
-* https://en.wikipedia.org/wiki/Function_overloading
-* https://app.pluralsight.com/guides/overload-methods-invoking-overload-methods-csharp
+### Additional Method Overloading resouces:
+* [https://en.wikipedia.org/wiki/Function_overloading](https://en.wikipedia.org/wiki/Function_overloading)
+* [https://app.pluralsight.com/guides/overload-methods-invoking-overload-methods-csharp](https://app.pluralsight.com/guides/overload-methods-invoking-overload-methods-csharp)
 
 
 
