@@ -28,11 +28,11 @@ public class Pay
      // Determine input type and pass it to overloaded method
      if (double.TryParse(strPay, out numPay) )
      {
-		  AcceptPayment(numPay);
+		AcceptPayment(numPay);
      }
      else
      {
-		  AcceptPayment(strPay);
+		AcceptPayment(strPay);
      }
   }
 	
