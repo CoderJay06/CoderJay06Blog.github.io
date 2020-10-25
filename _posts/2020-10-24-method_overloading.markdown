@@ -38,18 +38,18 @@ public class Pay
 	
     public static void AcceptPayment(string pay)
     {
-	  double convertedPay;
-			
-	  // Check if user entered the correct format and display output
-	  if (pay.Substring(0, 1) == "$" && double.TryParse(pay.Substring(1), out convertedPay))
-	  {
+	 double convertedPay;
+		
+	 // Check if user entered the correct format and display output
+	 if (pay.Substring(0, 1) == "$" && double.TryParse(pay.Substring(1), out convertedPay))
+	 {
 	   WriteLine($"You payed ${convertedPay} dollars");
-	  }
-	  else
-	  {
+	 }
+	 else
+	 {
 	   WriteLine("Invalid format entered, use a $ and a decimal number");
-	  }
-   }
+	 }
+	}
 	 
     public static void AcceptPayment(double pay)
     {
