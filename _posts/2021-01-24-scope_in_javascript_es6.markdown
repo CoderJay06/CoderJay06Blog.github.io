@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Scope in Javascript (ES6)"
-date:       2021-01-25 00:54:36 +0000
+date:       2021-01-24 19:54:37 -0500
 permalink:  scope_in_javascript_es6
 ---
 
@@ -68,7 +68,7 @@ function outer() {
 
 outer() // 1 2
 ```
-When `outer()` function is called it logs both variable's contents to the console because `inner()` function has access to its own locally scoped variable and the variable assigned in its outer scope. The topic of lexical scoping leads into the concept of [Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures) which is defined by MDN web docs as *"A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment)." * You can read more about closures [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures).
+When `outer()` function is called it logs both variable's contents to the console because `inner()` function has access to its own locally scoped variable and the variable assigned in its outer scope. The topic of lexical scoping leads into the concept of [Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures) which is defined by MDN web docs as *"A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment)."*  You can read more about closures [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures).
 
 ## Avoid using var
 Before Javascript ES6 (ECMAScript 2015) there was no support for let and const, when creating variables only var was used.  Var is function scoped and allows variables to be reassigned vs let & const which are block scope and don't allow reassignment. So it is best to not use var to avoid the many possible bugs and mistakes that can come from it.
