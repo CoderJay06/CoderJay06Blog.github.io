@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Callbacks in Javascript"
-date:       2021-04-04 11:51:33 +0000
+date:       2021-04-04 07:51:33 -0400
 permalink:  callbacks_in_javascript
 ---
 
@@ -59,7 +59,7 @@ Callbacks are a common and important tool in the toolbelt of any Javascript deve
 ### Resources 
 * [An Introduction to Callbacks and Higher Order Functions](https://www.youtube.com/watch?v=7E8ctomPQJw)
 * [Callback function](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function)
-* [Callback](https://en.wikipedia.org/wiki/Callback_(computer_programming)
+* [Callback](https://en.wikipedia.org/wiki/Callback_(computer_programming))
 
 
 
