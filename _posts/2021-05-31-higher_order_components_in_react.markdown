@@ -81,8 +81,8 @@ class Toggler extends React.Component {
         const WrappedComponent = this.props.component
         return (
             <div>
-                {/* here we render the wrapped compnent with the new data */}
-                {/* any additional props are passed through with ...this.props */}
+                    {/* here we render the wrapped compnent with the new data */}
+                    {/* any additional props are passed through with ...this.props */}
                 <WrappedComponent on={this.state.on} toggle={this.toggle} {...this.props} />
             </div>
         )
