@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Higher Order Components in React"
-date:       2021-05-31 11:33:11 +0000
+date:       2021-05-31 07:33:11 -0400
 permalink:  higher_order_components_in_react
 ---
 
@@ -82,7 +82,7 @@ class Toggler extends React.Component {
         return (
             <div>
 				{/* here we render the wrapped compnent with the new data */}
-			    {/* any additional props are passed through with ...this.props */}
+				{/* any additional props are passed through with ...this.props */}
                 <WrappedComponent on={this.state.on} toggle={this.toggle} {...this.props} />
             </div>
         )
