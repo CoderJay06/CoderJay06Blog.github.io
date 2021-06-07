@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Render Props"
-date:       2021-06-07 12:00:42 +0000
+date:       2021-06-07 08:00:42 -0400
 permalink:  render_props
 ---
 
@@ -9,7 +9,7 @@ permalink:  render_props
 To follow my last blog where I talked about [Higher Order Components in React](https://coderjay06.github.io/higher_order_components_in_react), I'll now explain the more commonly used technique over HOCs(Higher Order Components)  called [render props](https://reactjs.org/docs/render-props.html#gatsby-focus-wrapper). Render props is a reusability technique in React for sharing common data across components through props using functions as values. The component receiving it has knowledge of what to render through this function prop. Going back to the example in my previous blog, which you can find [here](https://coderjay06.github.io/higher_order_components_in_react), I'll show how we can refactor this code to use render props instead of the higher-order component technique.
 
 ## Using render props
-If you have more than one component with similar state and logic, you might want to think about how they can share it with each other. *Nobody likes greedy components! *To take our toggle feature for our like button and comment form component as an example, we realize this same reusability can be implemented through the render props technique. All we need to do is extract the logic from our components and place it in a single wrapper component.
+If you have more than one component with similar state and logic, you might want to think about how they can share it with each other. *Nobody likes greedy components!* To take our toggle feature for our like button and comment form component as an example, we realize this same reusability can be implemented through the render props technique. All we need to do is extract the logic from our components and place it in a single wrapper component.
 
 ```
 class TogglerWrapper extends React.Component {
