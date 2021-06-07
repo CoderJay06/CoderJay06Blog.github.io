@@ -27,9 +27,9 @@ class TogglerWrapper extends React.Component {
         return (
             <div>
 				{this.props.render({
-                    on: this.state.on,
-                    toggle: this.toggle
-                })}
+					 on: this.state.on,
+					 toggle: this.toggle
+				 })}
             </div>
         )
     }    
