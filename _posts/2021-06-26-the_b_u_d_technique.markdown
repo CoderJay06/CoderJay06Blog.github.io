@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "The B.U.D Technique"
-date:       2021-06-26 22:25:54 +0000
+date:       2021-06-26 18:25:54 -0400
 permalink:  the_b_u_d_technique
 ---
 
@@ -13,21 +13,21 @@ Optimizing your algorithms is an important skill for new Software Engineers to d
 
 The basic gist of what these are for is that they represent the three most common tasks that an inefficent solution is wasting time with. An approach would be to walk through you're brute force algorithm checking for each of these. Then focus on fixing it until it can be improved. So let's break down the specifics of each of these and explain how identifying them in your algorithm using the BUD technique can help to optimize your solution.
 ## Bottlenecks
-The bottleneck is the part of your algorithm that considerably slows down its runtime. For an example say we have the following problem to solve:</br>
+The bottleneck is the part of your algorithm that considerably slows down its runtime. For an example say we have the following problem to solve:
 
-**Problem**: *You have two arrays with distinct elements in common. How would you compute the number of elements in common.* </br>
+**Problem**: *You have two arrays with distinct elements in common. How would you compute the number of elements in common.*
 
 **Brute force approach**: Take each element in array A, walk it through array B and check if it contains the current element.
-</br>
+
 This would roughly add up to an O(A * B) runtime. The bottleneck in this case is B. We're checking for each element of A to see if it contains any of the elements in B, the contains operation is O(B). This sort of repetition negeatively effects our runtime. After recognizing this bottleneck we should think about what's a more optimal way to perform this same type of operation. How about a hash look up. 
 
 **Optimizing for bottleneck**: Add every element in array B into a hash table. Then for each element in A check if it exists in the hash table.
 
 This would bring our runtime down to O(A + B), getting rid of the bottleneck.
 ## Unnecessary Work
-For unnecessary work we'll basically restructure the algorithm by finding the other uneeded operations being done and make small changes to adjust for better optimization. Let's take the following example problem from the Cracking the Coding Interview book:</br>
+For unnecessary work we'll basically restructure the algorithm by finding the other uneeded operations being done and make small changes to adjust for better optimization. Let's take the following example problem from the Cracking the Coding Interview book:
 
-**Problem**: *Print all positive integer solutions to the equation a^3 + b^3 = c^3 + d^3 where a, b, c and d are integers between 1 and 1000. - Cracking the Coding Interview*</br>
+**Problem**: *Print all positive integer solutions to the equation a^3 + b^3 = c^3 + d^3 where a, b, c and d are integers between 1 and 1000. - Cracking the Coding Interview*
 
 **Brute force approach**: Just use multiple nested for loops like the following Javascript example:
 ```
@@ -44,7 +44,7 @@ for (let a = 1; 1 < 1000; a++) {
 }
 // Note: I don't suggest running this code in you're console
 ```
-This code solves our problem but it uses an unnecassary amount of work. To optimize we could break from the loop as soon as we find our solution. In this case we'll break out of the inner loop of d.</br>
+This code solves our problem but it uses an unnecassary amount of work. To optimize we could break from the loop as soon as we find our solution. In this case we'll break out of the inner loop of d.
 
 **Optimize for unnecessary work**:
 ```
@@ -66,7 +66,7 @@ This may be a very small optimization that does little to improve our code but i
 
 Here we'll look for any duplicated work using the same example as before.
 
-**Problem**: *Print all positive integer solutions to the equation a^3 + b^3 = c^3 + d^3 where a, b, c and d are integeers between 1 and 1000. - Cracking the Coding Interview*</br>
+**Problem**: *Print all positive integer solutions to the equation a^3 + b^3 = c^3 + d^3 where a, b, c and d are integeers between 1 and 1000. - Cracking the Coding Interview*
 
 **Optimize for duplicated work**: Once again this is a problem where a hash table can be used to optimize. Add all c, d pairs to an array. Then store it as the value in the hash map.
 ```
