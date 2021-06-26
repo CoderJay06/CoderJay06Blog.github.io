@@ -38,9 +38,9 @@ for (let a = 1; 1 < 1000; a++) {
                 if (Math.pow(a, 3) + Math.pow(b, 3) == Math.pow(c, 3) + Math.pow(d, 3)) {
                     console.log(' a:', a, ' b:',  b, ' c:', c, ' d:', d)
                 }
-			}
-		}
-	}
+            }
+        }
+    }
 }
 // Note: I don't suggest running this code in you're console
 ```
@@ -54,11 +54,11 @@ for (let a = 1; 1 < 1000; a++) {
             for (let d = 1; d < 1000; d++) {
                 if (Math.pow(a, 3) + Math.pow(b, 3) == Math.pow(c, 3) + Math.pow(d, 3)) {
                     console.log(' a:', a, ' b:',  b, ' c:', c, ' d:', d)
-					break // solution found, break from loop 
+                    break // solution found, break from loop 
                 }
-			}
-		}
-	}
+            }
+        }
+    }
 }
 ```
 This may be a very small optimization that does little to improve our code but if you continue to make small adjustments like this it may be able to effect the overall runtime of you're algorithm.
